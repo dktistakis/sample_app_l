@@ -4,7 +4,7 @@ gem 'bootstrap-sass', '2.1'
 gem 'bcrypt-ruby', '3.0.1'
 group :development, :test do
 	gem 'sqlite3', '1.3.5'
-	gem 'rspec-rails', '2.11.0'
+	gem 'rspec-rails', '2.14.0'
 	gem 'guard-rspec', '1.2.1'
 end
 # Gems used only for assets and not required
@@ -20,6 +20,7 @@ group :test do
 	gem 'rb-fchange', '0.0.5'
 	gem 'rb-notifu', '0.0.4'
 	gem 'win32console', '1.3.0'
+	gem 'factory_girl_rails', '4.1.0'
 # System-dependent gems
 end
 group :production do
