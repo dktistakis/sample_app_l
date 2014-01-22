@@ -1,12 +1,14 @@
-source 'https://rubygems.org'
+source 'http://rubygems.org'
 gem 'rails', '3.2.14'
 gem 'bootstrap-sass', '2.1'
 gem 'bcrypt-ruby', '3.0.1'
 gem 'faker', '1.0.1'
 gem 'will_paginate', '3.0.3'
 gem 'bootstrap-will_paginate', '0.0.6'
+gem 'pg', '0.12.2'
+gem 'rubygems-bundler'
 group :development, :test do
-	gem 'sqlite3', '1.3.5'
+	#gem 'sqlite3', '1.3.5'
 	gem 'rspec-rails', '2.14.0'
 	gem 'guard-rspec', '1.2.1'
 end
@@ -16,18 +18,20 @@ group :assets do
 	gem 'sass-rails', '3.2.5'
 	gem 'coffee-rails', '3.2.2'
 	gem 'uglifier', '1.2.3'
+	gem 'therubyracer'
 end
 gem 'jquery-rails', '2.0.2'
 group :test do
 	gem 'capybara', '1.1.2'
 	gem 'rb-fchange', '0.0.5'
 	gem 'rb-notifu', '0.0.4'
-	gem 'win32console', '1.3.0'
+	gem 'rb-readline'
+	#gem 'win32console', '1.3.0'
 	gem 'factory_girl_rails', '4.1.0'
 # System-dependent gems
 end
 group :production do
-	gem 'pg', '0.12.2'
+	
 	gem 'rails_12factor'
 end
 group :development do
